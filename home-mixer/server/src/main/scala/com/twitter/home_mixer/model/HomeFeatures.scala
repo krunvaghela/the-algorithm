@@ -178,8 +178,6 @@ object HomeFeatures {
   object CachedScoredTweetsFeature extends Feature[PipelineQuery, Seq[hmt.CachedScoredTweet]]
   object DDGStatsElonFeature extends Feature[PipelineQuery, Long]
   object DDGStatsVitsFeature extends Feature[PipelineQuery, Set[Long]]
-  object DDGStatsDemocratsFeature extends Feature[PipelineQuery, Set[Long]]
-  object DDGStatsRepublicansFeature extends Feature[PipelineQuery, Set[Long]]
   object DeviceLanguageFeature extends Feature[PipelineQuery, Option[String]]
   object DismissInfoFeature
       extends FeatureWithDefaultOnFailure[PipelineQuery, Map[st.SuggestType, Option[DismissInfo]]] {
